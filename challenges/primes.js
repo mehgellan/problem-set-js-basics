@@ -19,3 +19,13 @@ function isPrime(num) {
   }
   return true;
 }
+
+function primes(max) {
+  var primes = [];
+  for (var i = 1; i <= max; i++) {
+    if (isPrime(i)) {
+      primes.push(i);
+    }
+  }
+  console.log(primes);
+}
