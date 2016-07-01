@@ -24,8 +24,15 @@
 
 var string = "meg";
 var stringArray = string.split('');
-var reverseArray = stringArray.reverse();
+// var reverseArray = stringArray.reverse();
 function isPalindrome(string) {
   var stringArray = string.split('');
-  
+  var reverseArray = stringArray.reverse();
+  if (stringArray === reverseArray) {
+    console.log("this is a palindrome!");
+    return true;
+  }
+  else {
+    console.log("This is not a palindrome!");
+  }
 }
