@@ -21,3 +21,11 @@
 */
 
 // YOUR CODE HERE
+
+var string = "meg";
+var stringArray = string.split('');
+var reverseArray = stringArray.reverse();
+function isPalindrome(string) {
+  var stringArray = string.split('');
+  
+}
