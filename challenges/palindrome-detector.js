@@ -25,6 +25,9 @@
 // var reverseArray = stringArray.reverse();
 function isPalindrome(string) {
   var stringArray = string.split('');
+  for (var i = 0; i < stringArray.length; i++) {
+    stringArray[i] = stringArray[i].toLowerCase();
+  }
   var tempArray = stringArray.slice();
   var reverseArray = tempArray.reverse();
   var reverseString = reverseArray.join('');
