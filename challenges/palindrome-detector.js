@@ -22,17 +22,17 @@
 
 // YOUR CODE HERE
 
-var string = "meg";
-var stringArray = string.split('');
 // var reverseArray = stringArray.reverse();
 function isPalindrome(string) {
   var stringArray = string.split('');
-  var reverseArray = stringArray.reverse();
-  if (stringArray === reverseArray) {
-    console.log("this is a palindrome!");
-    return true;
-  }
-  else {
-    console.log("This is not a palindrome!");
+  var tempArray = stringArray.slice();
+  var reverseArray = tempArray.reverse();
+  var reverseString = reverseArray.join('');
+  if (reverseString===string) {
+      console.log("palindrome");
+      return true;
+  } else {
+      console.log("not a palindrome");
+      return false;
   }
 }
